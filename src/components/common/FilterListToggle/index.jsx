@@ -5,32 +5,28 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   root: {
+    display:'flex',
     width: '100%',
     justifyContent: 'space-between',
+    flexDirection:'column'
+   
   },
   toggle: {
     fontFamily: `'Raleway', sans-serif`,
+    border:'none',
     fontSize: '.8rem',
-    border: '1px solid rgba(0, 0, 0, 0.12)',
-    borderRadius: '10px',
+    color:'#333',
+   
     '&.MuiToggleButtonGroup-groupedHorizontal:not(:last-child)': {
       borderRadius: '10px',
     },
     '&.MuiToggleButtonGroup-groupedHorizontal:not(:first-child)': {
       borderRadius: '10px',
-      border: '1px solid rgba(0, 0, 0, 0.12)',
+   
+    border:'none'
     },
-    '&.Mui-selected': {
-      borderRadius: '10px',
-      background: '#000',
-      color: '#fff',
-    },
-    '&.MuiToggleButton-root': {
-      '&:hover': {
-        background: '#000',
-        color: '#fff',
-      },
-    },
+   
+   
   },
 });
 

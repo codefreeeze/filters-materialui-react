@@ -1,3 +1,11 @@
+.navbar-header{
+  z-index: 10;
+  box-shadow: 0px 1px 3px #333;;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .searchBar-wrap {
   display: flex;
   align-items: center;
