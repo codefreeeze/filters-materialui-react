@@ -174,7 +174,7 @@ const Home = () => {
         {/* List & Empty View */}
         <div className='home_list-wrap'>
         
-        
+          <h1 style={{textAlign:"center"}}>Products</h1><hr/>
           {resultsFound ? <List list={list} /> : <Loading />}
           
         </div>
