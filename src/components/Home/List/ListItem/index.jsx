@@ -1,23 +1,19 @@
 import React from 'react';
 import './styles.css';
+import { NavLink } from 'react-router-dom';
 
 const ListItem = ({
-  item: { coverSrc, title, price, deliveryFee, serviceTime, rating },
+  
+  item: {id, image, title, price, },
 }) => (
-  <div className='listItem-wrap'>
-    <img src={coverSrc} alt='' />
-    <header>
-      <h4>{title}</h4>
-      <span>🌟{rating}</span>
-    </header>
-    <footer>
-      <p>
-        <b>{serviceTime}</b> <span> Delivery Fee ${deliveryFee}</span>
-      </p>
-      <p>
-        <b>${price}</b>
-      </p>
-    </footer>
+
+  <div className="card my-5 py-4" style={{width:"18rem"}}>
+    <img className="card-img-top" style={{height:"270px"}} src={image}alt={title} />
+    <div className="card-body">
+      <h5 className="card-title">{title.substring(0, 16)}...</h5>
+      <p className="card-text">${price}</p>
+      <NavLink to={`/products/${id}`} style={{ width: "100%" }} className="add btn btn-outline-dark">By Now</NavLink>
+    </div>
   </div>
 );
 

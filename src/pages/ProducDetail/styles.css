@@ -1,0 +1,19 @@
+.flex-box{
+    justify-content: center;
+    display: flex;
+    padding: 20px 0;
+}
+.img-detail{
+    height:400px ;
+    width: 400px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    
+}
+@media screen and (max-width:760px) {
+  
+    .image-price{
+        padding: 0;
+      }
+    }
